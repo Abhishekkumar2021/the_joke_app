@@ -1,0 +1,96 @@
+.Joke {
+	width: 100%;
+	display: flex;
+	border-bottom: 1px dotted black;
+}
+.Joke-text {
+	font-family: "Maven Pro", sans-serif;
+	list-style-type: none;
+	font-size: 25px;
+	padding: 10px;
+	flex-grow: 1;
+	border-radius: 5px;
+	display: flex;
+	align-items: center;
+}
+.Joke-btns {
+	min-width: 12%;
+	border-radius: 10px;
+	padding: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(255, 255, 255);
+	margin: 5px;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+	transition: 0.05s ease all;
+}
+.Joke-btns:hover {
+	box-shadow: 0 0 0 2px rgb(131, 33, 196);
+}
+.vote {
+	color: rgb(131, 33, 196);
+	padding: 10px;
+	font-size: 35px;
+	transition: 0.1s ease all;
+	border-radius: 50%;
+	flex-grow: 1;
+	text-align: center;
+	border: 2px solid green;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.219);
+}
+/* .vote:hover {
+	transform: scale(1.2);
+	color: rgb(253, 0, 198);
+} */
+.up,
+.down {
+	font-size: 20px;
+	transition: 0.3s ease all;
+}
+.up {
+	margin-right: 15px;
+}
+.down {
+	margin-left: 15px;
+}
+.up:hover {
+	transform: scale(1.6) translateY(-5px);
+	color: rgb(0, 255, 0);
+}
+.down:hover {
+	transform: scale(1.6) translateY(5px);
+	color: rgb(255, 0, 0);
+}
+.Joke-emoji {
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 35px;
+}
+.em {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.381);
+	padding: 0px;
+	border-radius: 50%;
+}
+.em:hover {
+	animation: shake 2s ease infinite;
+}
+@keyframes shake {
+	0% {
+		transform: rotate(0deg) scale(1);
+	}
+	20% {
+		transform: rotate(-10deg) scale(1.2);
+	}
+	40% {
+		transform: rotate(0deg) scale(1);
+	}
+	80% {
+		transform: rotate(10deg) scale(1.2);
+	}
+	100% {
+		transform: rotate(0deg) scale(1);
+	}
+}
